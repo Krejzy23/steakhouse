@@ -61,7 +61,7 @@ const Navbar = () => {
             {/* LEFT */}
             <div className="flex items-center gap-6">
               <div className="">
-                <img src="/img/logo.svg" alt="logo" className="h-16 w-16 text-black transition hover:rotate-6 hover:scale-110"/>
+                <img src="/img/logo.svg" alt="logo" className="h-10 w-10 text-black transition hover:rotate-6 hover:scale-110"/>
               </div>
 
               {/* <Button
@@ -78,7 +78,7 @@ const Navbar = () => {
                   key={index}
                   to={item.to}
                   onClick={item.label === "Home" ? handleHomeClick : undefined}
-                  className="nav-hover-btn"
+                  className="nav-hover-btn text-base!"
                 >
                   {item.label}
                 </Link>
