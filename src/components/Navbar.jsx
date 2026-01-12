@@ -78,7 +78,7 @@ const Navbar = () => {
                   key={index}
                   to={item.to}
                   onClick={item.label === "Home" ? handleHomeClick : undefined}
-                  className="nav-hover-btn text-base!"
+                  className="nav-hover-btn text-lg!"
                 >
                   {item.label}
                 </Link>
@@ -106,7 +106,7 @@ const Navbar = () => {
 
       {/* MOBILE MENU */}
       {isMobileOpen && (
-        <div className="fixed inset-0 z-40 bg-black/90 pt-24 px-6 text-white">
+        <div className="fixed inset-0 z-40 bg-white/80 pt-24 px-6 text-black">
           <nav className="flex flex-col gap-6 uppercase">
             {navItems.map((item, i) => (
               <Link
