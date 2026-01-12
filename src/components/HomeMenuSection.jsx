@@ -10,7 +10,7 @@ const HomeMenuSection = () => {
           const isReversed = i % 2 === 1;
 
           return (
-            <Link key={i} to={item.to} className="group grid grid-cols-2">
+            <div key={i} className="group grid grid-cols-2 items-stretch">
               {/* IMAGE */}
               <div
                 className={clsx(
@@ -33,12 +33,12 @@ const HomeMenuSection = () => {
                 )}
               >
                 {/* LEFT DECOR */}
-                <div className="absolute left-0 top-0 h-full w-px bg-black/20" />
-                <div className="absolute left-0 top-0 h-full w-full border-l border-t border-black/20" />
+                <div className="absolute left-0 top-0 h-full w-px bg-black/20 pointer-events-none" />
+                <div className="absolute left-0 top-0 h-full w-full border-l border-t border-black/20 pointer-events-none" />
 
                 {/* RIGHT DECOR */}
-                <div className="absolute right-0 bottom-0 h-full w-px bg-black/20" />
-                <div className="absolute right-0 bottom-0 h-full w-full border-r border-b border-black/20" />
+                <div className="absolute right-0 bottom-0 h-full w-px bg-black/20 pointer-events-none" />
+                <div className="absolute right-0 bottom-0 h-full w-full border-r border-b border-black/20 pointer-events-none" />
 
                 {/* CONTENT */}
                 <div className="relative z-10 max-w-md text-center space-y-4">
@@ -48,13 +48,14 @@ const HomeMenuSection = () => {
                   <p className="text-sm uppercase tracking-widest text-black/60">
                     {item.subtitle}
                   </p>
-
-                  <span className="inline-block mt-6 text-xs uppercase tracking-[0.3em] border-b border-black/40 pb-1 hover:text-yellow-900/30">
-                    Zobrazit
-                  </span>
+                  <Link to={item.to}>
+                    <span className="inline-block mt-6 text-xs uppercase tracking-[0.3em] border-b border-black/40 pb-1 hover:text-yellow-900/30">
+                      Zobrazit
+                    </span>
+                  </Link>
                 </div>
               </div>
-            </Link>
+            </div>
           );
         })}
       </div>

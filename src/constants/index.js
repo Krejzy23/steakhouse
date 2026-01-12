@@ -15,7 +15,7 @@ export const homeMenuItems = [
   },
   {
     title: "Nápoje",
-    subtitle: "Víno · Pivo · Nealko",
+    subtitle: "Pivo · Víno · Nealko",
     image: "/img/drinks.webp",
     to: "/drinks",
   },
