@@ -3,22 +3,22 @@ const About = () => {
     <section className="bg-gray-200 px-6 py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2">
         {/* TEXT BOX */}
-        <div className="bg-white p-5 md:p-7 border border-black/10">
+        <div className="bg-white p-5 md:p-10 border border-black/10">
           <div className="relative bg-white p-10 md:p-14 border border-black/10">
             {/* QUOTES */}
-            <span className="pointer-events-none absolute -top-6 -left-4 font-serif text-9xl leading-none text-yellow-900/20">
+            <span className="pointer-events-none absolute -top-6 -left-4 font-serif text-9xl leading-none text-yellow-900/30">
               “
             </span>
 
-            <span className="pointer-events-none absolute -bottom-20 -right-4 font-serif text-9xl leading-none text-yellow-900/20">
+            <span className="pointer-events-none absolute -bottom-24 -right-4 font-serif text-9xl leading-none text-yellow-900/30">
               ”
             </span>
 
-            <h2 className="mb-6 font-serif text-4xl uppercase tracking-wide">
-              O nás
+            <h2 className="mb-6 font-serif text-xl md:text-4xl tracking-wide">
+              O Nás
             </h2>
 
-            <div className="space-y-4 font-[circular-web] text-lg text-black/80">
+            <div className="space-y-4 font-[circular-web] text-sm md:text-lg text-black/80">
               <p>
                 Highland Restaurant je malé steakové bistro s rodinnou
                 atmosférou. Jen pár stolů, žádný spěch, žádný hluk.
@@ -35,7 +35,7 @@ const About = () => {
                 v hotovosti.
               </p>
 
-              <p className="mt-8 text-sm uppercase tracking-widest text-black/70">
+              <p className="mt-8 text-xs uppercase tracking-widest text-black/70">
                 Poctivé steaky, férové ceny a chuť, na kterou se nezapomíná.
               </p>
             </div>
@@ -52,8 +52,8 @@ const About = () => {
           />
 
           {/* DECOR FRAMES – BEHIND IMAGE */}
-          <div className="pointer-events-none absolute -bottom-4 -left-4 h-full w-full border border-black/20 z-0" />
-          <div className="pointer-events-none absolute bottom-4 left-4 h-full w-full border border-black/20 z-0" />
+          <div className="pointer-events-none absolute -bottom-4 -left-4 h-full w-full border border-dashed border-black/20 z-0" />
+          <div className="pointer-events-none absolute bottom-4 left-4 h-full w-full border border-dashed border-black/20 z-0" />
         </div>
       </div>
     </section>
