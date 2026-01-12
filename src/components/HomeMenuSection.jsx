@@ -5,7 +5,7 @@ import { homeMenuItems } from "../constants";
 const HomeMenuSection = () => {
   return (
     <section className="bg-gray-200">
-      <div className="mx-auto p-5 max-w-7xl">
+      <div className="mx-auto p-5 max-w-7xl pb-32">
         {homeMenuItems.map((item, i) => {
           const isReversed = i % 2 === 1;
 
@@ -32,6 +32,7 @@ const HomeMenuSection = () => {
                   isReversed ? "order-1" : "order-2"
                 )}
               >
+                <img src="/img/grid.png" alt="" className="inset-0 absolute w-full h-full"/>
                 {/* LEFT DECOR */}
                 <div className="absolute left-0 top-0 h-full w-px bg-black/20 pointer-events-none" />
                 <div className="absolute left-0 top-0 h-full w-full border-l border-t border-black/20 pointer-events-none" />
