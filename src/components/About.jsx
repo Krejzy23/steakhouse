@@ -1,47 +1,63 @@
 const About = () => {
-    return (
-      <section className="bg-white px-6 py-24">
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 md:grid-cols-2">
-          {/* TEXT */}
-          <div>
+  return (
+    <section className="bg-gray-200 px-6 py-32">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2">
+        {/* TEXT BOX */}
+        <div className="bg-white p-5 md:p-7 border border-black/10">
+          <div className="relative bg-white p-10 md:p-14 border border-black/10">
+            {/* QUOTES */}
+            <span className="pointer-events-none absolute -top-6 -left-4 font-serif text-9xl leading-none text-yellow-900/20">
+              “
+            </span>
+
+            <span className="pointer-events-none absolute -bottom-20 -right-4 font-serif text-9xl leading-none text-yellow-900/20">
+              ”
+            </span>
+
             <h2 className="mb-6 font-serif text-4xl uppercase tracking-wide">
-              About Us
+              O nás
             </h2>
-  
-            <div className="space-y-4 text-lg text-black/80">
+
+            <div className="space-y-4 font-[circular-web] text-lg text-black/80">
               <p>
-                Highland Restaurant je malé steakové bistro s rodinnou atmosférou.
-                Jen pár stolů, žádný spěch, žádný hluk.
+                Highland Restaurant je malé steakové bistro s rodinnou
+                atmosférou. Jen pár stolů, žádný spěch, žádný hluk.
               </p>
-  
+
               <p>
-                Specializujeme se na kvalitní hovězí steaky, které připravujeme s
-                maximálním respektem k masu. Bez kompromisů, bez zbytečností.
+                Specializujeme se na kvalitní hovězí steaky z mladých býčků,
+                které připravujeme s maximálním respektem k masu. Bez
+                kompromisů, bez zbytečností.
               </p>
-  
+
               <p>
-                Rezervace přijímáme výhradně telefonicky. Platba je možná pouze v
-                hotovosti.
+                Rezervace přijímáme výhradně telefonicky. Platba je možná pouze
+                v hotovosti.
               </p>
-  
-              <p className="font-medium">
-                Ceny odpovídají kvalitě – a steaky mluví samy za sebe.
+
+              <p className="mt-8 text-sm uppercase tracking-widest text-black/70">
+                Poctivé steaky, férové ceny a chuť, na kterou se nezapomíná.
               </p>
             </div>
           </div>
-  
-          {/* IMAGE */}
-          <div className="relative">
-            <img
-              src="/img/interior.jpg"
-              alt="Highland Restaurant interior"
-              className="aspect-4/5 w-full object-cover"
-            />
-          </div>
         </div>
-      </section>
-    );
-  };
-  
-  export default About;
-  
+
+        {/* IMAGE */}
+        <div className="relative">
+          {/* IMAGE */}
+          <img
+            src="/img/aboutInterior.webp"
+            alt="Highland Restaurant interior"
+            className="relative z-10 w-full object-cover"
+          />
+
+          {/* DECOR FRAMES – BEHIND IMAGE */}
+          <div className="pointer-events-none absolute -bottom-4 -left-4 h-full w-full border border-black/20 z-0" />
+          <div className="pointer-events-none absolute bottom-4 left-4 h-full w-full border border-black/20 z-0" />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;
