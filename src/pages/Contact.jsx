@@ -8,10 +8,6 @@ const Contact = () => {
         <h1 className="font-serif text-5xl sm:text-6xl uppercase tracking-widest">
           Kontakt
         </h1>
-
-        <div className="mx-auto mt-8 h-px w-24 bg-black/20" />
-
-        <p className="mt-6 text-black/60">Najdete nás v srdci Žižkova</p>
       </header>
 
       {/* MAIN CONTENT */}
@@ -109,7 +105,7 @@ const Contact = () => {
           {/* RIGHT – IMAGE */}
           <div className="relative">
             <div
-              className="aspect-4/5 overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/10
+              className="aspect-square overflow-hidden rounded-2xl shadow-xl ring-1 ring-black/10
                 max-h-105 sm:max-h-none"
             >
               <img
