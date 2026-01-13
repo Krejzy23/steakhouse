@@ -60,9 +60,9 @@ const Footer = () => {
           <p className="text-white/60">
             Otevírací doba
             <br />
-            po - pá 11:30–22
+            PO - PÁ 11:30–22
             <br />
-            víkend 12–22
+            SO - NE 12–22
             <br />
           </p>
 

@@ -28,12 +28,15 @@ const Navbar = () => {
   // navbar hide/show on scroll
   useEffect(() => {
     if (currentScrollY === 0) {
+      // Topmost position: show navbar without floating-nav
       setIsNavVisible(true);
       navContainerRef.current.classList.remove("floating-nav");
     } else if (currentScrollY > lastScrollY) {
+      // Scrolling down: hide navbar and apply floating-nav
       setIsNavVisible(false);
       navContainerRef.current.classList.add("floating-nav");
-    } else {
+    } else if (currentScrollY < lastScrollY) {
+      // Scrolling up: show navbar with floating-nav
       setIsNavVisible(true);
       navContainerRef.current.classList.add("floating-nav");
     }
@@ -55,19 +58,28 @@ const Navbar = () => {
     document.body.style.overflow = isMobileOpen ? "hidden" : "auto";
 
     // GSAP animation for mobile menu items
-    if (isMobileOpen) {
+    if (!isMobileOpen) return;
+
+    linksRef.current.forEach((el, i) => {
+      if (!el) return;
+
       gsap.fromTo(
-        linksRef.current,
-        { opacity: 0, x: -320 },
+        el,
+        {
+          opacity: 0,
+          x: i % 2 === 0 ? -160 : 160,
+          scale: 0.01,
+        },
         {
           opacity: 1,
           x: 0,
+          scale: 1,
           duration: 0.9,
-          stagger: 0.2,
-          ease: "power2.out",
+          delay: i * 0.16,
+          ease: "power3.out",
         }
       );
-    }
+    });
   }, [isMobileOpen]);
 
   return (
@@ -85,7 +97,7 @@ const Navbar = () => {
                 <img
                   src="/img/logo.svg"
                   alt="logo"
-                  className="h-10 w-10 text-black transition hover:rotate-6 hover:scale-110"
+                  className="md:h-1O md:w-10 h-14 w-14 text-black transition hover:rotate-6 hover:scale-110"
                 />
               </div>
             </div>

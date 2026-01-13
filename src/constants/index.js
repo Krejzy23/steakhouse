@@ -41,8 +41,8 @@ export const categories = [
   "Hovězí svíčková",
   "Kuřecí maso",
   "Norský losos",
-  "Přílohy",
   "Dezerty",
+  "Přílohy",
 ];
 
 export const menuItems = {
@@ -181,7 +181,7 @@ export const menuItems = {
   Doporučujeme: [
     {
       grams: "250g",
-      name: "Telecí Tri-tip Steak ( Maminha )",
+      name: "Telecí Tri-tip Steak (Maminha)",
       description:
         "Tri-tip je trojúhelníkový sval pod nízkým roštěncem s tukovým krytím, jež masu dodává výraznou chuť. ( Marinované žampiony )",
       price: "248 Kč",

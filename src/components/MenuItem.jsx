@@ -27,7 +27,7 @@ const MenuItem = ({ grams, name, description, price }) => {
   
         {/* DESCRIPTION */}
         {description && (
-          <p className="mt-2 text-sm text-black/70 leading-relaxed max-w-2xl">
+          <p className="mt-2 ml-12 italic text-sm text-black/60 leading-relaxed max-w-md">
             {description}
           </p>
         )}

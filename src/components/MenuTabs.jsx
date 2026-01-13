@@ -2,26 +2,26 @@ import clsx from "clsx";
 
 const MenuTabs = ({ categories, active, onSelect }) => {
   return (
-    <div className="sticky top-20 z-40 bg-gray-100/90 backdrop-blur border-b border-black/10">
-      <div className="mx-auto max-w-6xl px-4">
-        <nav className="flex gap-6 overflow-x-auto py-4">
+    <nav className="sticky top-0 z-30 bg-gray-100 border-y border-black/10">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="flex gap-8 overflow-x-auto py-4 text-sm uppercase tracking-widest">
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => onSelect(cat)}
               className={clsx(
-                "whitespace-nowrap uppercase text-sm tracking-widest transition",
+                "whitespace-nowrap pb-1 transition",
                 active === cat
-                  ? "text-black border-b border-black"
-                  : "text-black/50 hover:text-black"
+                  ? "border-b-2 border-black text-black"
+                  : "opacity-50 hover:opacity-100"
               )}
             >
               {cat}
             </button>
           ))}
-        </nav>
+        </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
