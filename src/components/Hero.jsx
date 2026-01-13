@@ -74,12 +74,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center justify-center bg-white px-6"
+      className="relative flex min-h-screen items-center justify-center bg-white px-6 "
     >
       {/* BACKGROUND */}
       <div className="absolute inset-0">
         <img
-          src="/img/heroWall.jpg"
+          src="/img/heroWall.webp"
           alt="Hero background"
           className="h-full w-full object-cover"
         />
