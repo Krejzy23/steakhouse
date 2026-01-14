@@ -4,14 +4,14 @@ const Contact = () => {
   return (
     <main className="bg-gray-100">
       {/* TITLE */}
-      <header className="pt-32 pb-24 text-center px-6">
+      <header className="pt-32 pb-25 text-center px-6">
         <h1 className="font-serif text-5xl sm:text-6xl uppercase tracking-widest">
           Kontakt
         </h1>
       </header>
 
       {/* MAIN CONTENT */}
-      <section className="mx-auto max-w-7xl px-6 pb-32">
+      <section className="mx-auto max-w-7xl px-6 pb-5">
         <div className="grid gap-16 lg:grid-cols-2 items-start">
           {/* LEFT – CONTENT */}
           <div className="space-y-16 text-sm sm:text-base">
@@ -27,29 +27,36 @@ const Contact = () => {
                 . V blízkosti se nachází zastávky{" "}
                 <strong className="font-medium">tramvají i autobusů</strong>.
                 Parkování je možné v přilehlých ulicích v rámci{" "}
-                <strong className="font-medium">modrých zón</strong>.
+                <strong className="font-medium">modrých zón</strong> nebo 3min
+                pěšky od nákupího centra Flóra.
               </p>
+              <h3 className="">Rezervace příjímáme výhradně <strong>TELEFONICKY</strong>.</h3>
             </div>
 
             {/* CONTACT INFO */}
-            <div className="space-y-10">
+            <div className="relative space-y-10 bg-white p-10">
+              {/* TOP LEFT CORNER */}
+              <div className="pointer-events-none absolute top-5 left-5 h-16 w-16 border-l border-t border-black/20" />
+
+              {/* BOTTOM RIGHT CORNER */}
+              <div className="pointer-events-none absolute -bottom-5 right-5 h-16 w-16 border-r border-b border-black/20" />
               {/* PHONE  AND EMAIL*/}
-              <div className="flex flex-col md:flex-row space-y-10 md:space-x-20">
-                <div className="flex gap-4">
+              <div className="flex flex-row items-center justify-around">
+                <div className="flex gap-2">
                   <HiPhone className="h-6 w-6 text-black/50 mt-1" />
-                  <div>
+                  <div className="">
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
                       Telefon
                     </h3>
                     <a
                       href="tel:+420222714653"
-                      className="text-lg font-medium hover:underline"
+                      className="font-medium hover:text-yellow-900/30"
                     >
                       +420 222 714 653
                     </a>
                   </div>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-2">
                   <HiEnvelope className="h-6 w-6 text-black/50 mt-1" />
                   <div>
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
@@ -57,7 +64,7 @@ const Contact = () => {
                     </h3>
                     <a
                       href="mailto:info@restaurace.cz"
-                      className="text-lg font-medium hover:underline"
+                      className="text-base font-medium hover:text-yellow-900/30"
                     >
                       info@restaurace.cz
                     </a>
@@ -66,14 +73,14 @@ const Contact = () => {
               </div>
 
               {/* ADDRESS */}
-              <div className="flex flex-col md:flex-row space-y-10 md:space-x-14">
-                <div className="flex gap-4">
+              <div className="flex flex-row items-center justify-around">
+                <div className="flex gap-2">
                   <HiMapPin className="h-6 w-6 text-black/50 mt-1" />
                   <div>
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
                       Adresa
                     </h3>
-                    <p className="text-lg leading-relaxed">
+                    <p className="text-base leading-relaxed">
                       Lucemburská 1832/38
                       <br />
                       Praha 3 – Žižkov
@@ -82,18 +89,20 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-2">
                   <HiKey className="h-6 w-6 text-black/50 mt-1" />
                   <div>
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
                       Otevírací doba
                     </h3>
-                    <ul className="space-y-2 text-lg font-serif">
+                    <ul className="space-y-2 text-base font-serif">
                       <li>
-                        Po–Pá <span className="float-right px-2"> 11:30 – 22:00</span>
+                        Po–Pá{" "}
+                        <span className="float-right px-2"> 11:30–22:00</span>
                       </li>
                       <li>
-                        So-Ne <span className="float-right px-2"> 12:00 – 22:00</span>
+                        So-Ne{" "}
+                        <span className="float-right px-2"> 12:00–22:00</span>
                       </li>
                     </ul>
                   </div>
