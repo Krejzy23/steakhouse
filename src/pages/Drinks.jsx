@@ -29,7 +29,7 @@ const Drinks = () => {
     <main className="bg-gray-100">
       {/* TITLE */}
       <div className="px-6 pt-24 pb-10 text-center">
-        <h1 className="font-serif text-5xl uppercase tracking-widest">
+        <h1 className="font-[urania] text-5xl uppercase tracking-widest">
           Nápoje
         </h1>
       </div>

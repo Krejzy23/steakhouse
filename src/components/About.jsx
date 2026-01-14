@@ -36,7 +36,7 @@ const About = () => {
               </p>
 
               <p className="mt-8 text-xs uppercase tracking-widest text-black/70">
-                Poctivé steaky, férové ceny a chuť, na kterou se nezapomíná.
+                "Poctivé steaky, férové ceny a chuť, na kterou se nezapomíná".
               </p>
             </div>
           </div>
