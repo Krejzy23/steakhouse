@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <section className="bg-gray-200 px-6 py-32">
+    <section className="bg-gray-50 px-6 py-32">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 lg:grid-cols-2">
         {/* TEXT BOX */}
-        <div className="bg-white p-5 md:p-10 border border-black/10">
+        <div className="bg-white p-5 md:p-10">
           <div className="relative bg-white p-10 md:p-14 border border-black/10">
             {/* QUOTES */}
             <span className="pointer-events-none absolute -top-6 -left-4 font-serif text-9xl leading-none text-yellow-900/30">

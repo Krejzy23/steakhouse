@@ -4,7 +4,7 @@ import { homeMenuItems } from "../constants";
 
 const HomeMenuSection = () => {
   return (
-    <section className="bg-gray-200">
+    <section className="bg-gray-50">
       <div className="mx-auto p-5 max-w-7xl pb-32">
         {homeMenuItems.map((item, i) => {
           const isReversed = i % 2 === 1;

@@ -25,7 +25,7 @@ const MenuPage = () => {
   }, [active]);
 
   return (
-    <main className="bg-gray-100">
+    <main className="bg-gray-50">
       {/* TITLE */}
       <div className="px-6 pt-24 pb-10 text-center">
         <h1 className="font-serif text-5xl uppercase tracking-widest">

@@ -2,7 +2,7 @@ import { HiPhone, HiEnvelope, HiMapPin, HiKey } from "react-icons/hi2";
 
 const Contact = () => {
   return (
-    <main className="bg-gray-100">
+    <main className="bg-gray-50">
       {/* TITLE */}
       <header className="pt-32 pb-25 text-center px-6">
         <h1 className="font-serif text-5xl sm:text-6xl uppercase tracking-widest">
@@ -43,28 +43,28 @@ const Contact = () => {
               {/* PHONE  AND EMAIL*/}
               <div className="flex flex-row items-center justify-around">
                 <div className="flex gap-2">
-                  <HiPhone className="h-6 w-6 text-black/50 mt-1" />
+                  <HiPhone className="h-4 w-4 md:w-6 md:h-6 text-black/50 mt-1" />
                   <div className="">
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
                       Telefon
                     </h3>
                     <a
                       href="tel:+420222714653"
-                      className="font-medium hover:text-yellow-900/30"
+                      className="font-medium md:text-base hover:text-yellow-900/30 text-xs"
                     >
                       +420 222 714 653
                     </a>
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <HiEnvelope className="h-6 w-6 text-black/50 mt-1" />
+                  <HiEnvelope className="h-4 w-4 md:w-6 md:h-6 text-black/50 mt-1" />
                   <div>
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
                       Email
                     </h3>
                     <a
                       href="mailto:info@restaurace.cz"
-                      className="text-base font-medium hover:text-yellow-900/30"
+                      className="text-xs md:text-base font-medium hover:text-yellow-900/30"
                     >
                       info@restaurace.cz
                     </a>
@@ -75,12 +75,12 @@ const Contact = () => {
               {/* ADDRESS */}
               <div className="flex flex-row items-center justify-around">
                 <div className="flex gap-2">
-                  <HiMapPin className="h-6 w-6 text-black/50 mt-1" />
+                  <HiMapPin className="h-4 w-4 md:w-6 md:h-6 text-black/50 mt-1" />
                   <div>
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
                       Adresa
                     </h3>
-                    <p className="text-base leading-relaxed">
+                    <p className="text-xs md:text-base leading-relaxed">
                       Lucemburská 1832/38
                       <br />
                       Praha 3 – Žižkov
@@ -90,12 +90,12 @@ const Contact = () => {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  <HiKey className="h-6 w-6 text-black/50 mt-1" />
+                  <HiKey className="h-4 w-4 md:w-6 md:h-6 text-black/50 mt-1" />
                   <div>
                     <h3 className="uppercase tracking-widest text-xs text-black/50 mb-1">
                       Otevírací doba
                     </h3>
-                    <ul className="space-y-2 text-base font-serif">
+                    <ul className="space-y-2 text-xs md:text-base font-serif">
                       <li>
                         Po–Pá{" "}
                         <span className="float-right px-2"> 11:30–22:00</span>
