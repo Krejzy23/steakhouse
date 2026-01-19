@@ -2,7 +2,7 @@ import { HiPhone, HiEnvelope, HiMapPin, HiKey } from "react-icons/hi2";
 
 const Contact = () => {
   return (
-    <main className="bg-gray-50">
+    <main className="background-image">
       {/* TITLE */}
       <header className="pt-32 pb-25 text-center px-6">
         <h1 className="font-serif text-5xl sm:text-6xl uppercase tracking-widest">
@@ -15,22 +15,26 @@ const Contact = () => {
         <div className="grid gap-16 lg:grid-cols-2 items-start">
           {/* LEFT – CONTENT */}
           <div className="space-y-16 text-sm sm:text-base">
-            <div className="border-t border-black/10 pt-10">
-              <h3 className="uppercase tracking-widest text-sm mb-4">
-                Dostupnost
-              </h3>
-              <p className="text-black/70 leading-relaxed max-w-xl">
-                Restaurace je snadno dostupná{" "}
-                <strong className="font-medium">
-                  městskou hromadnou dopravou
-                </strong>
-                . V blízkosti se nachází zastávky{" "}
-                <strong className="font-medium">tramvají i autobusů</strong>.
-                Parkování je možné v přilehlých ulicích v rámci{" "}
-                <strong className="font-medium">modrých zón</strong> nebo 3min
-                pěšky od nákupího centra Flóra.
-              </p>
-              <h3 className="">Rezervace příjímáme výhradně <strong>TELEFONICKY</strong>.</h3>
+            <div className="border-t font-[circular-web] border-black/30 pt-10">
+              <div className="p-10 bg-white">
+                <h3 className="uppercase tracking-widest text-black/90 text-sm mb-4">
+                  Dostupnost
+                </h3>
+                <p className="text-black/60 leading-relaxed max-w-xl">
+                  Restaurace je snadno dostupná{" "}
+                  <strong className="font-medium">
+                    městskou hromadnou dopravou
+                  </strong>
+                  . V blízkosti se nachází zastávky{" "}
+                  <strong className="font-medium">tramvají i autobusů</strong>.
+                  Parkování je možné v přilehlých ulicích v rámci{" "}
+                  <strong className="font-medium">modrých zón</strong> nebo 3min
+                  pěšky od nákupího centra Flóra.
+                </p>
+                <h4 className="text-black/60">
+                  Rezervace příjímáme výhradně <strong className="font-medium">TELEFONICKY</strong>.
+                </h4>
+              </div>
             </div>
 
             {/* CONTACT INFO */}

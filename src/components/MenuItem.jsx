@@ -6,13 +6,13 @@ const MenuItem = ({ grams, name, description, price }) => {
           <div className="flex items-baseline gap-3">
             {/* GRAMS */}
             {grams && (
-              <span className="text-xs tracking-widest uppercase text-black/50">
+              <span className="text-xs lowercase tracking-widest text-black/50">
                 {grams}
               </span>
             )}
   
             {/* NAME */}
-            <h3 className="font-serif text-lg sm:text-xl uppercase tracking-wide">
+            <h3 className="font-[circular-web] text-lg sm:text-xl uppercase tracking-wide">
               {name}
             </h3>
           </div>

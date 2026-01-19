@@ -5,7 +5,7 @@ const MenuSection = ({ title, items }) => {
 
   return (
     <section className="mb-20">
-      <h2 className="mb-6 font-serif text-3xl sm:text-4xl uppercase tracking-wide">
+      <h2 className="mb-6 font-[circular-web] text-3xl sm:text-4xl uppercase tracking-wide">
         {title}
       </h2>
 

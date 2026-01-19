@@ -5,7 +5,7 @@ const DrinkTabs = ({ categories, active, onSelect }) => {
   return (
     <nav className="sticky top-0 z-30 bg-gray-100 border-y border-black/10">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="flex items-center justify-center gap-8 overflow-x-auto py-4 text-md uppercase tracking-widest font-[urania]">
+        <div className="flex gap-8 overflow-x-auto py-4 text-md uppercase tracking-widest font-[circular-web]">
           {categories.map((cat) => (
             <button
               key={cat}

@@ -4,7 +4,7 @@ import { homeMenuItems } from "../constants";
 
 const HomeMenuSection = () => {
   return (
-    <section className="bg-gray-50">
+    <section className="background-image">
       <div className="mx-auto p-5 max-w-7xl pb-32">
         {homeMenuItems.map((item, i) => {
           const isReversed = i % 2 === 1;
@@ -43,7 +43,7 @@ const HomeMenuSection = () => {
 
                 {/* CONTENT */}
                 <div className="relative z-10 max-w-md text-center space-y-4">
-                  <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl uppercase tracking-wide">
+                  <h3 className="font-[circular-web] text-3xl sm:text-4xl md:text-5xl uppercase tracking-wide">
                     {item.title}
                   </h3>
                   <p className="text-sm uppercase tracking-widest text-black/60">
