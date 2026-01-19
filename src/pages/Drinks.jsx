@@ -28,25 +28,33 @@ const Drinks = () => {
   return (
     <main className="bg-gray-50">
       {/* TITLE */}
-      <div className="background-image px-6 pt-24 pb-10 text-center">
-        <h1 className="font-serif text-5xl uppercase tracking-widest">
-          Nápoje
-        </h1>
+      <div className="background-image pt-24 pb-10 text-center">
+        <div className="flex items-center justify-center">
+          <div className=" bg-gray-50">
+            <div className=" border-6 border-yellow-900/10 p-5 ">
+              <h1 className="font-serif text-4xl md:text-5xl uppercase tracking-widest">
+                Nápoje
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* TABS = FILTER */}
-      <DrinkTabs
-        categories={drinkCategories}
-        active={active}
-        onSelect={setActive}
-      />
-
-      {/* CONTENT */}
-      <div ref={contentRef} className="mx-auto max-w-4xl px-6 py-20">
-        <DrinkSection
-          title={active}
-          items={drinkItem[active]} 
+      <div className="background-image pb-10">
+        {/* TABS = FILTER */}
+        <DrinkTabs
+          categories={drinkCategories}
+          active={active}
+          onSelect={setActive}
         />
+
+        {/* CONTENT */}
+        <div
+          ref={contentRef}
+          className="mx-auto max-w-4xl mt-8 border-6 border-yellow-900/10 px-6 py-10 bg-gray-50"
+        >
+          <DrinkSection title={active} items={drinkItem[active]} />
+        </div>
       </div>
     </main>
   );

@@ -6,13 +6,13 @@ const DrinkItem = ({ vols, name, description, price }) => {
         <div className="flex items-baseline gap-3">
           {/* GRAMS */}
           {vols && (
-            <span className="text-xs tracking-widest lowercase text-black/50">
+            <span className="text-sm tracking-widest lowercase text-black/50">
               {vols}
             </span>
           )}
 
           {/* NAME */}
-          <h3 className="text-xl sm:text-xl uppercase tracking-wide">
+          <h3 className="text-base md:text-xl uppercase tracking-wide">
             {name}
           </h3>
         </div>
@@ -27,7 +27,7 @@ const DrinkItem = ({ vols, name, description, price }) => {
 
       {/* DESCRIPTION */}
       {description && (
-        <p className="mt-2 ml-12 italic text-md text-black/60 leading-relaxed max-w-md">
+        <p className="mt-2 ml-12 italic text-sm md:text-md text-black/60 leading-relaxed max-w-md">
           {description}
         </p>
       )}
