@@ -31,7 +31,7 @@ const Drinks = () => {
       <div className="background-image pt-24 pb-10 text-center">
         <div className="flex items-center justify-center">
           <div className=" bg-gray-50">
-            <div className=" border-6 border-yellow-900/10 p-5 ">
+            <div className="border-6 border-yellow-900/10 p-5">
               <h1 className="font-serif text-4xl md:text-5xl uppercase tracking-widest">
                 Nápoje
               </h1>
@@ -53,7 +53,10 @@ const Drinks = () => {
           ref={contentRef}
           className="mx-auto max-w-4xl mt-8 border-6 border-yellow-900/10 px-6 py-10 bg-gray-50"
         >
-          <DrinkSection title={active} items={drinkItem[active]} />
+          <DrinkSection 
+            title={active} 
+            items={drinkItem[active]} 
+          />
         </div>
       </div>
     </main>
