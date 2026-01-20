@@ -19,6 +19,12 @@ export const images = [
   "/img/gallery/gallery-10.webp",
   "/img/gallery/gallery-11.webp",
   "/img/gallery/gallery-12.webp",
+  "/img/gallery/gallery-13.webp",
+  "/img/gallery/gallery-14.webp",
+  "/img/gallery/gallery-15.webp",
+  "/img/gallery/gallery-16.webp",
+  "/img/gallery/gallery-17.webp",
+  "/img/gallery/gallery-18.webp",
 ]
 
 export const homeMenuItems = [

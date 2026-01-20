@@ -4,11 +4,17 @@ const Contact = () => {
   return (
     <main className="background-image">
       {/* TITLE */}
-      <header className="pt-32 pb-25 text-center px-6">
-        <h1 className="font-serif text-5xl sm:text-6xl uppercase tracking-widest">
-          Kontakt
-        </h1>
-      </header>
+      <div className="pt-24 pb-10 text-center">
+        <div className="flex items-center justify-center">
+          <div className=" bg-gray-50">
+            <div className="border-6 border-yellow-900/10 p-5">
+              <h1 className="font-serif text-4xl md:text-5xl uppercase tracking-widest">
+                Kontakty
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* MAIN CONTENT */}
       <section className="mx-auto max-w-7xl px-6 pb-5">
