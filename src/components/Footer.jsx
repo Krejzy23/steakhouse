@@ -36,6 +36,9 @@ const Footer = () => {
           <Link to="/contact" className="block text-white/70 hover:text-white">
             Kontakt
           </Link>
+          <Link to="/reservation" className="block text-white/70 hover:text-white">
+            Rezervace
+          </Link>
         </nav>
 
         <div className="h-60 w-60">

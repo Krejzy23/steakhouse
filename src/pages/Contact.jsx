@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="pt-24 pb-10 text-center">
         <div className="flex items-center justify-center">
           <div className=" bg-gray-50">
-            <div className="border-6 border-yellow-900/10 p-5">
+            <div className="border-3 border-yellow-900/10 p-5">
               <h1 className="font-serif text-4xl md:text-5xl uppercase tracking-widest">
                 Kontakty
               </h1>
@@ -37,8 +37,14 @@ const Contact = () => {
                   <strong className="font-medium">modrých zón</strong> nebo 3min
                   pěšky od nákupího centra Flóra.
                 </p>
-                <h4 className="text-black/60">
-                  Rezervace příjímáme výhradně <strong className="font-medium">TELEFONICKY</strong>.
+                <h4 className="text-black/60 mt-6">
+                  Preferujete online rezervaci?{" "}
+                  <a
+                    href="/reservation"
+                    className="font-medium underline hover:text-yellow-900/50"
+                  >
+                    Rezervujte si stůl zde
+                  </a>
                 </h4>
               </div>
             </div>

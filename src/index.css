@@ -61,3 +61,6 @@
   backdrop-filter: blur(12px);
   border-radius: 12px;
 }
+.form-input {
+  @apply w-full text-black/60 border-2 border-yellow-900/10 p-2 
+}

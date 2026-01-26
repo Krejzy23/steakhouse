@@ -32,7 +32,7 @@ const Gallery = () => {
       <div className="pt-24 pb-10 text-center">
         <div className="flex items-center justify-center">
           <div className="bg-gray-50">
-            <div className="border-6 border-yellow-900/30 p-5">
+            <div className="border-3 border-yellow-900/10 p-5">
               <h1 className="font-serif text-4xl md:text-5xl uppercase tracking-widest">
                 Galerie
               </h1>
@@ -106,8 +106,8 @@ const Gallery = () => {
             ×
           </button>
 
-          <div className="absolute bottom-6 text-sm text-white/60">
-            ← → pro navigaci · ESC zavřít
+          <div className="hidden md:flex absolute bottom-6 text-sm text-white/60">
+            ←→ pro navigaci · ESC zavřít
           </div>
         </div>
       )}

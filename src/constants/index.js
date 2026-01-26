@@ -4,6 +4,8 @@ export const navItems = [
   { label: "Nápoje", to: "/drinks" },
   { label: "Galerie", to: "/gallery" },
   { label: "Kontakt", to: "/contact" },
+  { label: "Rezervace", to: "/reservation" },
+
 ];
 
 export const images = [

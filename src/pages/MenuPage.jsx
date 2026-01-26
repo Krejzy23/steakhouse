@@ -30,7 +30,7 @@ const MenuPage = () => {
       <div className="background-image pt-24 pb-10 text-center">
         <div className="flex items-center justify-center">
           <div className="bg-gray-50">
-            <div className="border-6 border-yellow-900/10 p-5">
+            <div className="border-3 border-yellow-900/10 p-5">
               <h1 className="font-serif text-5xl uppercase tracking-widest">
                 Menu
               </h1>

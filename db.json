@@ -1,0 +1,48 @@
+{
+  "reservations": [
+    {
+      "id": "3fff",
+      "name": "Aleš Krejzl",
+      "phone": "737255859",
+      "email": "ales.krejzl@gmail.com",
+      "date": "2026-01-28",
+      "time": "15:00",
+      "guests": "4",
+      "note": "",
+      "createdAt": "2026-01-26T22:25:32.984Z"
+    },
+    {
+      "id": "2a9b",
+      "name": "Aleš Krejzl",
+      "phone": "737255859",
+      "email": "ales.krejzl@gmail.com",
+      "date": "2026-01-27",
+      "time": "15:00",
+      "guests": 2,
+      "note": "",
+      "createdAt": "2026-01-26T22:25:49.549Z"
+    },
+    {
+      "id": "03af",
+      "name": "Aleš Krejzl",
+      "phone": "737255859",
+      "email": "ales.krejzl@gmail.com",
+      "date": "2026-01-27",
+      "time": "16:00",
+      "guests": 2,
+      "note": "",
+      "createdAt": "2026-01-26T22:26:01.919Z"
+    },
+    {
+      "id": "ad62",
+      "name": "Aleš Krejzl",
+      "phone": "737255859",
+      "email": "ales.krejzl@gmail.com",
+      "date": "2026-01-27",
+      "time": "17:00",
+      "guests": 2,
+      "note": "dee",
+      "createdAt": "2026-01-26T22:26:23.169Z"
+    }
+  ]
+}

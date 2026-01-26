@@ -8,6 +8,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import Reservations from "./pages/Reservations";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/drinks" element={<Drinks />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/reservation" element={<Reservations />} />
         </Routes>
         <Footer />
       </main>
